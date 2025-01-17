@@ -1,0 +1,153 @@
+/* Estilo para el header */
+header {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+header .logo {
+  width: 50px;
+  margin-right: 10px;
+}
+
+/* Contenedor de la cámara y la foto al lado */
+.camera-container {
+  display: flex;
+  justify-content: center; /* Centra el contenido dentro del contenedor */
+  align-items: center;     /* Centra los elementos verticalmente */
+  height: calc(100vh - 150px); /* Ajuste para excluir el header y footer */
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+/* Estilo para el video de la cámara */
+.camera-feed {
+  width: 300px;
+  height: 300px;
+  border: 5px solid #2c3e50;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Estilo para el botón de tomar la foto */
+.take-photo-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.take-photo-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para el contenedor de la foto tomada */
+.photo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px; /* Espacio entre la cámara y la foto */
+  border: 5px solid #2c3e50; /* Borde predeterminado */
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  background-color: #f2f2f2;
+}
+
+.photo-container.has-photo {
+  border-color: #2c3e50; /* Cambia el color del borde cuando hay una foto */
+}
+
+/* Estilo para la foto tomada */
+.taken-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Placeholder de foto (cuando no hay imagen) */
+.no-photo-placeholder {
+  color: #007bff;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Estilos generales para el footer */
+footer {
+  background-color: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Fondo blanco general para el div */
+div {
+  background-color: #ffffff; /* Fondo blanco */
+}
+/* Estilo para el botón de borrar la foto */
+.delete-photo-btn {
+  padding: 10px 20px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.delete-photo-btn:hover {
+  background-color: #c82333;
+}
+.subtitle {
+  text-align: center;
+  font-size: 2rem; 
+  font-weight: bold; 
+  color: #2c3e50; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem; 
+  font-family: 'Poppins', sans-serif; 
+  letter-spacing: 1.2px; 
+}
+.use-photo-btn {
+  background-color: #007bff; /* Color de fondo azul */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Animación al pasar el cursor */
+}
+
+.use-photo-btn:hover {
+  background-color: #0056b3; /* Color azul más oscuro al pasar el cursor */
+}
+
+.use-photo-btn:disabled {
+  background-color: #007bff; /* Mismo color pero menos saturado cuando está deshabilitado */
+  opacity: 0.6; /* Opacidad reducida */
+  cursor: not-allowed;
+}
